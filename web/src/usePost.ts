@@ -16,7 +16,11 @@ export default function usePost() {
             }
 
             try {
+<<<<<<< HEAD
             const resposta = await fetch(`https://volserver.onrender.com/${url}`, {
+=======
+            const resposta = await fetch(`http://localhost:8080/${url}`, {
+>>>>>>> origin/test
                 method: 'POST',
                 headers,
                 body: JSON.stringify(dados)

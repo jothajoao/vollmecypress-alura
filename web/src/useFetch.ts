@@ -6,7 +6,11 @@ export default function useFetch<T>({ url }: { url: string }) {
   
 
     useEffect(() => {
+<<<<<<< HEAD
      fetch(`https://volserver.onrender.com/${url}`)
+=======
+     fetch(`http://localhost:8080/${url}`)
+>>>>>>> origin/test
         .then(
             resposta => resposta.json()
         ).then(dados => setDados(dados)).catch((erro => setErro(erro)))
